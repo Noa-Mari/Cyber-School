@@ -63,7 +63,11 @@ namespace CyberSchool
             StudentFirstName = StringCheck("Enter Student First Name");
             StudentLastName = StringCheck("Enter Student Last Name");
             ID = IntIDCheck("Enter Student ID");
+<<<<<<< HEAD
             Birthday = DateTimeCheck("Enter Your Birthday(dd/mm/yyyy)");
+=======
+            Birthday = BirthdayCheck("Enter Your Birthday(dd/mm/yyyy)");
+>>>>>>> stageThree
             MaritalStatus = StringCheck("Enter Marital Status");
             CourseType = EnumCheck<CourseType>("Enter Course-\n1.profession\n2.bachelor\n3.master");
             Faculty = EnumCheck<Faculty>("Enter Course-\n1.ComputerScience\n2.SoftwareEngineering\n3.Cyber\n4.Mathematics\n5.engineering");

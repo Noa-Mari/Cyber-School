@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cyber-School")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3949da798585526ecffbed70fc0aa53b7477c733")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c2defd41258e43b34a35c263ff24b1f407d9fde")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cyber-School")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cyber-School")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

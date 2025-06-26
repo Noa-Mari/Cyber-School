@@ -25,7 +25,11 @@ namespace Cyber_School
                     }
                     else if (input.Any(char.IsDigit))
                     {
+<<<<<<< HEAD
                         Console.WriteLine("WARNING-!:Name cant have numbers in it !");
+=======
+                        Console.WriteLine("WARNING-!:string cant have numbers in it !");
+>>>>>>> stageThree
                         continue;
                     }
                 }
@@ -137,7 +141,11 @@ namespace Cyber_School
                 return input;
             }
         }
+<<<<<<< HEAD
         protected DateTime DateTimeCheck(string msg)
+=======
+        protected DateTime BirthdayCheck(string msg)
+>>>>>>> stageThree
         {
             while (true)
             {
@@ -146,7 +154,11 @@ namespace Cyber_School
 
                 try
                 {
+<<<<<<< HEAD
                     input = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None);
+=======
+                    input = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None);
+>>>>>>> stageThree
                     if (!checkAge(input))
                     {
                         Console.WriteLine("--You Need To Be Over 16 To Register!---");
@@ -174,6 +186,29 @@ namespace Cyber_School
             }
             return age >= 16;
         }
+<<<<<<< HEAD
+=======
+        protected DateTime DateCheck(string msg)
+        {
+            while (true)
+            {
+                Console.WriteLine($"{msg}:");
+                DateTime input;
+
+                try
+                {
+                    input = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None);
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error-!:Invalid date");
+                    continue;
+                }
+                return input;
+            }
+        }
+>>>>>>> stageThree
         protected T EnumCheck<T>(string msg) where T : Enum
         {
             while (true)
