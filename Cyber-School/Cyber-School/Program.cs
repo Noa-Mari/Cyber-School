@@ -17,3 +17,6 @@ new Student("noa", "mari", 123456789, new DateTime(2006, 10, 13),"Single", Cours
 Classroom classroom = new Classroom();
 classroom.Register();
 classroom.classroomPrint();
+
+Lecturer lecturer = new Lecturer();
+lecturer.Register();
