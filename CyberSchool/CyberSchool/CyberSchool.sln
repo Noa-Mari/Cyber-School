@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberSchool", "CyberSchool.csproj", "{03558A12-232F-C1A0-470E-F678E9C68303}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03558A12-232F-C1A0-470E-F678E9C68303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03558A12-232F-C1A0-470E-F678E9C68303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03558A12-232F-C1A0-470E-F678E9C68303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03558A12-232F-C1A0-470E-F678E9C68303}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE757A3D-75D2-4412-9424-ABC4F3F4CBBA}
+	EndGlobalSection
+EndGlobal

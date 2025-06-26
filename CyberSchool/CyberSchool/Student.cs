@@ -75,6 +75,11 @@ namespace CyberSchool
                     System.Console.WriteLine("WARNING-!:you cant enter empty string!");
                     return StringCheck(msg);
                 }
+                else if (input.Any(char.IsDigit))
+                {
+                    System.Console.WriteLine("WARNING-!:Name cant have numbers in it !");
+                    return StringCheck(msg);
+                }
             }
             catch (Exception ex)
             {
@@ -94,9 +99,14 @@ namespace CyberSchool
                 input = int.Parse(Console.ReadLine());
                 if (input.ToString().Length != 9)
                 {
-                    Console.WriteLine("WARNING-!:ID Must By Length Of 9!");
+                    Console.WriteLine("WARNING-!:ID Must Be Length Of 9!");
                     return IntIDCheck(msg);
                 }
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("WARNING-!:ID need to be is a numbers format\n-ex:123456789-");
+                return IntIDCheck(msg);
             }
             catch (Exception ex)
             {
