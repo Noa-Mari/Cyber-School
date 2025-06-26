@@ -25,7 +25,7 @@ namespace Cyber_School
                     }
                     else if (input.Any(char.IsDigit))
                     {
-                        Console.WriteLine("WARNING-!:Name cant have numbers in it !");
+                        Console.WriteLine("WARNING-!:string cant have numbers in it !");
                         continue;
                     }
                 }
@@ -137,7 +137,7 @@ namespace Cyber_School
                 return input;
             }
         }
-        protected DateTime DateTimeCheck(string msg)
+        protected DateTime BirthdayCheck(string msg)
         {
             while (true)
             {
@@ -146,7 +146,7 @@ namespace Cyber_School
 
                 try
                 {
-                    input = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None);
+                    input = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None);
                     if (!checkAge(input))
                     {
                         Console.WriteLine("--You Need To Be Over 16 To Register!---");
@@ -173,6 +173,26 @@ namespace Cyber_School
                 age--;
             }
             return age >= 16;
+        }
+        protected DateTime DateCheck(string msg)
+        {
+            while (true)
+            {
+                Console.WriteLine($"{msg}:");
+                DateTime input;
+
+                try
+                {
+                    input = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None);
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error-!:Invalid date");
+                    continue;
+                }
+                return input;
+            }
         }
         protected T EnumCheck<T>(string msg) where T : Enum
         {
