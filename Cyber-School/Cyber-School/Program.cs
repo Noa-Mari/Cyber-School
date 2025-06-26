@@ -1,9 +1,16 @@
-﻿using CyberSchool;
+﻿using Cyber_School;
+using CyberSchool;
 
 Student student_Noa =
 new Student("noa", "mari", 12345, new DateTime(2006, 10, 13),"Single", CourseType.master, Faculty.Cyber);
 
-Student student = new Student();
-student.Register(); 
+//Student student = new Student();
+//student.Register();
 
-student.PrintStudent();
+student_Noa.PrintStudent();
+
+Course course = new Course();
+course.Register();
+
+course.PrintCourse();
+

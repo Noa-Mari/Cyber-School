@@ -6,7 +6,7 @@ using CyberSchool;
 
 namespace Cyber_School
 {
-    public class Course: Validation
+    public class Course : Validation
     {
         public string CourseName { get; private set; }
         public int Point { get; private set; }
@@ -20,11 +20,16 @@ namespace Cyber_School
         }
         public void Register()
         {
-            System.Console.WriteLine("New Course registration ");
+            System.Console.WriteLine("\nNew Course registration ");
             CourseName = StringCheck("Enter Course Name");
-            Point = IntCheck("Enter Course Numbers");
+            Point = IntCheck("Enter How many points does the course give");
             Faculty = EnumCheck<Faculty>("Enter Course-\n1.ComputerScience\n2.SoftwareEngineering\n3.Cyber\n4.Mathematics\n5.engineering");
             Hours = IntCheck("Enter Course Hours");
+        }
+
+        public void PrintCourse()
+        {
+            Console.WriteLine($"CourseName:{CourseName}\nPoint:{Point}\nFaculty:{Faculty}\nHours:{Hours}\n------\n\n");
         }
     }
 }
