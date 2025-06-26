@@ -55,6 +55,11 @@ namespace Cyber_School
                         Console.WriteLine("WARNING-!:ID Must Be Length Of 9!");
                         continue;
                     }
+                    else if (input < 0)
+                    {
+                        System.Console.WriteLine("WARNING-!:Can not Be Negative ");
+                        continue;
+                    }
                 }
                 catch (FormatException ex)
                 {
@@ -81,10 +86,46 @@ namespace Cyber_School
                 try
                 {
                     input = int.Parse(Console.ReadLine());
+                    if (input < 0)
+                    {
+                        System.Console.WriteLine("WARNING-!:Point Can not Be Negative ");
+                        continue;
+                    }
                 }
                 catch (FormatException ex)
                 {
-                    Console.WriteLine("WARNING-!:ID need to be is a numbers format\n-ex:123456789-");
+                    Console.WriteLine("WARNING-!:need to be in a numbers format\n-ex:12-");
+                    continue;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error-!:");
+                    Console.WriteLine(ex.Message);
+                    continue;
+                }
+                return input;
+            }
+        }
+
+        protected double DoubleCheck(string msg)
+        {
+            while (true)
+            {
+                Console.WriteLine($"{msg}:");
+                double input;
+
+                try
+                {
+                    input = double.Parse(Console.ReadLine());
+                    if (input < 0)
+                    {
+                        System.Console.WriteLine("WARNING-!:Can not Be Negative ");
+                        continue;
+                    }
+                }
+                catch (FormatException ex)
+                {
+                    Console.WriteLine("WARNING-!:need to be in a Double format\n-ex:12.2-");
                     continue;
                 }
                 catch (Exception ex)
