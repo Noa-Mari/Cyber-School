@@ -18,7 +18,7 @@ namespace Cyber_School
                 {
                     input = Console.ReadLine();
 
-                    if (string.IsNullOrEmpty(input))
+                    if (string.IsNullOrEmpty(input) && string.IsNullOrWhiteSpace(input))
                     {
                         Console.WriteLine("WARNING-!:you cant enter empty string!");
                         continue;
@@ -86,9 +86,9 @@ namespace Cyber_School
                 try
                 {
                     input = int.Parse(Console.ReadLine());
-                    if (input < 0)
+                    if (input < 1)
                     {
-                        System.Console.WriteLine("WARNING-!:Point Can not Be Negative ");
+                        System.Console.WriteLine("WARNING-!:Point Can not Be Negative or 0");
                         continue;
                     }
                 }
@@ -117,9 +117,9 @@ namespace Cyber_School
                 try
                 {
                     input = double.Parse(Console.ReadLine());
-                    if (input < 0)
+                    if (input < 1)
                     {
-                        System.Console.WriteLine("WARNING-!:Can not Be Negative ");
+                        System.Console.WriteLine("WARNING-!:Can not Be Negative or 0 ");
                         continue;
                     }
                 }
