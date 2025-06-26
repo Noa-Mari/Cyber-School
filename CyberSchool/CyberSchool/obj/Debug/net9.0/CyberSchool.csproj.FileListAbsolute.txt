@@ -1,0 +1,15 @@
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/bin/Debug/net9.0/CyberSchool
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/bin/Debug/net9.0/CyberSchool.deps.json
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/bin/Debug/net9.0/CyberSchool.runtimeconfig.json
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/bin/Debug/net9.0/CyberSchool.dll
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/bin/Debug/net9.0/CyberSchool.pdb
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/CyberSchool.GeneratedMSBuildEditorConfig.editorconfig
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/CyberSchool.AssemblyInfoInputs.cache
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/CyberSchool.AssemblyInfo.cs
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/CyberSchool.csproj.CoreCompileInputs.cache
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/CyberSchool.sourcelink.json
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/CyberSchool.dll
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/refint/CyberSchool.dll
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/CyberSchool.pdb
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/CyberSchool.genruntimeconfig.cache
+/Users/noamari/Desktop/mamas2/CyberSchool/CyberSchool/CyberSchool/obj/Debug/net9.0/ref/CyberSchool.dll

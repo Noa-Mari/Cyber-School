@@ -14,7 +14,11 @@ namespace CyberSchool
 
     public enum Faculty
     {
-        
+        ComputerScience,
+        SoftwareEngineering,
+        Cyber,
+        Mathematics,
+        engineering
     }
 
     public class Student
