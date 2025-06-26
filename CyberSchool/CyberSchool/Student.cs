@@ -29,17 +29,20 @@ namespace CyberSchool
         public int ID { get; private set; }
         public DateTime Birthday { get; private set; }
 
+        public string MaritalStatus { get; private set; }
+
         public CourseType CourseType { get; private set; }
 
         public Faculty Faculty { get; private set; }
 
-        public Student(string studentFirstName, string studentLastName, int id, DateTime birthday,
+        public Student(string studentFirstName, string studentLastName, int id, DateTime birthday,string maritalStatus,
         CourseType courseType, Faculty faculty)
         {
             StudentFirstName = studentFirstName;
             StudentLastName = studentLastName;
             ID = id;
             Birthday = birthday;
+            MaritalStatus = maritalStatus;
             CourseType = courseType;
             Faculty = faculty;
         }
@@ -59,6 +62,7 @@ namespace CyberSchool
             StudentLastName= StringCheck("Enter Student Last Name:");
             ID = IntIDCheck("Enter Student ID:");
             Birthday = DateTimeCheck("Enter Your Birthday(dd/mm/yyyy)");
+            MaritalStatus = StringCheck("Enter Marital Status:");
             CourseType = EnumCheck<CourseType>("Enter Course-\n1.profession\n2.bachelor\n3.master");
             Faculty = EnumCheck<Faculty>("Enter Course-\n1.ComputerScience\n2.SoftwareEngineering\n3.Cyber\n4.Mathematics\n5.engineering");
         }
