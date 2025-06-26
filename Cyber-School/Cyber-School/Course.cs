@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using CyberSchool;
+
+namespace Cyber_School
+{
+    public class Course: Validation
+    {
+        public string CourseName { get; private set; }
+        public int Point { get; private set; }
+        public Faculty Faculty { get; private set; }
+        public int Hours { get; private set; }
+
+
+        public Course()
+        {
+
+        }
+        public void Register()
+        {
+            System.Console.WriteLine("New Course registration ");
+            CourseName = StringCheck("Enter Course Name");
+            Point = IntCheck("Enter Course Numbers");
+            Faculty = EnumCheck<Faculty>("Enter Course-\n1.ComputerScience\n2.SoftwareEngineering\n3.Cyber\n4.Mathematics\n5.engineering");
+            Hours = IntCheck("Enter Course Hours");
+        }
+    }
+}

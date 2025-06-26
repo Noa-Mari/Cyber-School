@@ -40,6 +40,7 @@ namespace Cyber_School
         }
 
         protected int IntIDCheck(string msg)
+
         {
             while (true)
             {
@@ -54,6 +55,32 @@ namespace Cyber_School
                         Console.WriteLine("WARNING-!:ID Must Be Length Of 9!");
                         continue;
                     }
+                }
+                catch (FormatException ex)
+                {
+                    Console.WriteLine("WARNING-!:ID need to be is a numbers format\n-ex:123456789-");
+                    continue;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error-!:");
+                    Console.WriteLine(ex.Message);
+                    continue;
+                }
+                return input;
+            }
+        }
+        protected int IntCheck(string msg)
+        
+        {
+            while (true)
+            {
+                Console.WriteLine($"{msg}:");
+                int input;
+
+                try
+                {
+                    input = int.Parse(Console.ReadLine());
                 }
                 catch (FormatException ex)
                 {
